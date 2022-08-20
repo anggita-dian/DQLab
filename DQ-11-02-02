@@ -6,5 +6,4 @@ FROM dqlab_sales_store
 WHERE order_status = "Order Finished"
  AND YEAR(order_date) > 2010
 GROUP BY years, product_sub_category
-ORDER BY years, sales DESC
-LIMIT 5;
+ORDER BY years, sales DESC;
