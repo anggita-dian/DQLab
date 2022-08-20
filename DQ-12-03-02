@@ -1,0 +1,15 @@
+SELECT
+	SUM(quantity) AS total_penjualan,
+	SUM(quantity *priceEach) AS revenue
+FROM
+	orders_1
+WHERE
+	status = 'Shipped';
+
+SELECT
+	SUM(quantity) AS total_penjualan,
+	SUM(quantity *priceEach) AS revenue
+FROM
+	orders_2
+WHERE
+	status = 'Shipped';
